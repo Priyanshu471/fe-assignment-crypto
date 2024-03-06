@@ -8,19 +8,19 @@ const sentiments = [
     title: "Buy",
     value: "76%",
     color: "bg-[#00B386]",
-    width: "w-96",
+    width: "md:w-96",
   },
   {
     title: "Hold",
     value: "8%",
     color: "bg-[#C7C8CE]",
-    width: "w-8",
+    width: "md:w-8",
   },
   {
     title: "Sell",
     value: "16%",
     color: "bg-[#F7324C]",
-    width: "w-16",
+    width: "md:w-16",
   },
 ];
 
@@ -50,7 +50,7 @@ const Sentiment = () => {
                   <div className="text-[#7C7E8C] text-[15px] mr-9">
                     {sentiment.title}
                   </div>
-                  <div className={`md:${sentiment.width} w-20 h-2 `}>
+                  <div className={`${sentiment.width} w-20 h-2 `}>
                     <div className={`${sentiment.color} h-full rounded`}></div>
                   </div>
                   <div className="ml-3 text-[#7C7E8C] text-sm">
