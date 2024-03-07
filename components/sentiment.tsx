@@ -1,28 +1,8 @@
-import { ChevronRight } from "lucide-react";
 import NewsIcon from "./icons/news";
 import GrowthIcon from "./icons/growth";
 import InfoIcon from "./icons/infoIcon";
+import { lorem40, sentiments } from "@/lib/data";
 const cards = ["news", "growth"];
-const sentiments = [
-  {
-    title: "Buy",
-    value: "76%",
-    color: "bg-[#00B386]",
-    width: "md:w-96",
-  },
-  {
-    title: "Hold",
-    value: "8%",
-    color: "bg-[#C7C8CE]",
-    width: "md:w-8",
-  },
-  {
-    title: "Sell",
-    value: "16%",
-    color: "bg-[#F7324C]",
-    width: "md:w-16",
-  },
-];
 
 const Sentiment = () => {
   return (
@@ -99,10 +79,7 @@ const Card = ({ card }: { card: string }) => {
             mattis enim tincidunt.
           </div>
           <div className="lg:text-base text-xs font-normal text-[#3E5765] whitespace-normal mt-2 over">
-            Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est
-            faucibus metus quis. Amet sapien quam viverra adipiscing
-            condimentum. Ac consectetur et pretium in a bibendum in. Sed vitae
-            sit nisi viverra natoque lacinia libero enim.
+            {lorem40}
           </div>
         </div>
       </div>
